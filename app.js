@@ -13,7 +13,7 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: "http://localhost:8080",
+    origin: "https://groupo-frontend.vercel.app",
   })
 );
 // Utilisation d'Helmet pour sécuriser les en-têtes HTTP
@@ -24,7 +24,7 @@ app.use(
 app.use((req, res, next) => {
   res.setHeader(
     "Content-Security-Policy",
-    "default-src 'self'; img-src 'self' http://localhost:3000;"
+    "default-src 'self'; img-src 'self' https://groupo-frontend.vercel.app;"
   );
   next();
 });
