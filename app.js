@@ -13,7 +13,7 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: "https://groupo-frontend.vercel.app", "https://www.groupomania.fr"    "
+    origin: "https://groupo-frontend.vercel.app", "https://www.groupomania.fr"
   })
 );
 // Utilisation d'Helmet pour sécuriser les en-têtes HTTP
